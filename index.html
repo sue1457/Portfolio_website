@@ -5,22 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Source Sans Pro -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <!-- Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="main.css">
 
-
     <script src="https://kit.fontawesome.com/fb761d0aad.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <title>Simmon's Portfolio</title>
 </head>
 <body id="myPage">
     <!-- NAV -->
     <div id="navbar">
-        <div class="navbar__logo float--left">
-            <a href="#">Sun Woo Kim</a>
+        <!-- Logo -->
+        <div class="navbar__logo">
+            <div>
+                <a href="#">Sun&nbsp;Woo&nbsp;Kim</a>
+            </div>
+            <!-- Toggle button -->
+            <div>
+                <a href="#" class="navbar__toggleBtn">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
         </div>
-        <div class="navbar__menu float--right">
-            <ul>
+        <!-- Menu -->
+        <div class="navbar--menu">
+            <ul class="navbar__menu">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#works">WORKS</a></li>
@@ -33,7 +49,9 @@
     <section id="intro" class="section section--intro">
         <div class="inner"> 
             <h2>SUN WOO KIM'S PORTFOLIO</h2>
-            <img src="img/face_circle.png" alt="SunWooKim">
+            <div class="intro__img">
+                <img src="img/face_circle.png" alt="SunWooKim">
+            </div>
             <h4>안녕하세요 Front-end Developer 김선우 입니다.
                 <br>
                 제 포트폴리오 웹페이지에 오신것을 환영합니다.
@@ -47,8 +65,8 @@
                 <h2>ABOUT</h2>
                 <div class="about__inner">
                     <!-- IMAGE -->
-                    <div class="img">
-                        <img src="img/about.jpg" alt="about-me">
+                    <div class="about__img">
+                        <img src="img/about-11.jpg" alt="about-me">
                     </div>
 
                     <!-- SUMMARY -->
@@ -111,9 +129,9 @@
                 <h4>What I have created</h4>
                 <div class="works__inner">
                     <div class="card">
-                        <a href="works-github">
+                        <a href="https://sue1457.github.io/GitHub_WebSite/" target="_blank">
                             <div class="works__img">
-                                <img src="img/github-11.png" alt="GitHub">
+                                <img src="img/github-33.png" alt="GitHub">
                             </div>
                             <div class="works__name">
                                 <p>GitHub
@@ -122,9 +140,9 @@
                         </a>
                     </div>
                     <div class="card">
-                        <a href=works-book">
+                        <a href="https://sue1457.github.io/login" target="_blank">
                             <div class="works__img">
-                                <img src="img/book-11.jpg" alt="Book Management">
+                                <img src="img/book-33.jpg" alt="Book Management">
                             </div>
                             <div class="works__name">
                                 <p>Book Management
@@ -133,9 +151,9 @@
                         </a>
                     </div>
                     <div class="card">
-                        <a href="works-portfolio">
+                        <a href="https://sue1457.github.io/Portfolio_website/" target="_blank">
                             <div class="works__img">
-                                <img src="img/portfolio-1.png" alt="Portfolio">
+                                <img src="img/portfolio-33.png" alt="Portfolio">
                             </div>
                             <div class="works__name">
                                 <p>Portfolio
