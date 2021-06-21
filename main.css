@@ -4,6 +4,10 @@
     --white-font: #fffafa;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -102,7 +106,7 @@ h2 {
 .section {
     width: 100%;
     /* height: calc(100vh - 70px - var(--footer-height)); */
-    height: 100vh
+    height: 100%;
     position: relative;
 }
 
@@ -111,7 +115,7 @@ h2 {
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
-    padding: 120px 12px;
+    padding: 120px 12px 0 12px;
 }
 
 
@@ -121,6 +125,10 @@ h2 {
     background-color: #02475E;
     padding-top: 50px;
     text-align: center;
+}
+
+#intro .inner {
+    padding-bottom: 120px;
 }
 
 #intro h2 {
@@ -152,13 +160,11 @@ h2 {
 /* ABOUT */
 #about {
     background-color: var(--container-bg);
-    /* border: 1px solid black; */
 }
 
 #about .about__inner {
     display: flex;
     margin-top: 50px;
-    /* justify-content: space-around; */
 }
 
 #about .about__img {
@@ -168,12 +174,10 @@ h2 {
 }
 
 #about .about__img img {
-    /* width: 350px; */
-    /* height: 470px; */
     width: 100%;
     height: auto;
     border-radius: 7px;
-    /* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 #about .about__inner .summary h2 {
@@ -190,7 +194,6 @@ h2 {
 /* SKILLS */
 #skills {
     background-color: var(--container-bg);
-    /* border: 1px solid black; */
     text-align: center;
 }
 
@@ -231,7 +234,6 @@ h2 {
 /* WORKS */
 #works {
     background-color: var(--container-bg);
-    /* border: 1px solid black; */
     text-align: center;
 }
 
@@ -259,8 +261,6 @@ h2 {
 }
 
 #works .works__inner .card .works__img img {
-    /* width: 275px; */
-    /* height: 485px; */
     width: 100%;
     height: auto;
     padding-bottom: 15px;
@@ -281,7 +281,6 @@ h2 {
 /* CONTACT */
 #contact {
     background-color: var(--container-bg);
-    /* border: 1px solid black; */
     text-align: center;
 }
 
@@ -306,6 +305,7 @@ h2 {
     text-align: center;
     line-height: 2;
     background-color: var(--container-bg);
+    padding-top: 120px;
 }
 
 #footer .footer__inner {
@@ -320,7 +320,6 @@ h2 {
 
 #footer .footer__inner p {
     color: white;
-    /* display: block; */
     background-color: black;
     padding: 15px;
     font-size: 18px;
@@ -334,7 +333,6 @@ h2 {
     /* NAV */
     #navbar {
         flex-direction: column;
-        /* padding: 8px 120px; */
         padding: 8px 25px;
         /* text-align: left; */
         /* align-items: flex-start; */
@@ -342,7 +340,6 @@ h2 {
 
     #navbar .navbar__logo {
         padding: 12px;
-        /* border-bottom: 1px solid lightgray; */
         display: flex;
         justify-content: space-between;
     }
