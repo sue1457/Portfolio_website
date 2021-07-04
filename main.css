@@ -382,10 +382,11 @@ h2 {
 
 
     /* ABOUT */
-    #about .about__img img {
-        /* width: 280px; */
-        /* height: 376px; */
-    }
+
+    /* #about .about__img img {
+        width: 280px;
+        height: 376px;
+    } */
 
     #about .about__inner .summary p {
         font-size: 15px;
@@ -441,10 +442,10 @@ h2 {
         margin-bottom: 25px;
     }
 
-    #about .about__img img {
-        /* width: 350px; */
-        /* height: 470px; */
-    }
+    /* #about .about__img img {
+        width: 350px;
+        height: 470px;
+    } */
 
     #about .about__inner .summary p {
         font-size: 14px;
