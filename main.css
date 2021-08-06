@@ -13,9 +13,7 @@ html {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    /* color: black; */
     color: #262626;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -40,24 +38,11 @@ h2 {
     transform: none;
 }
 
-/* .float--left {
-    float: left;
-}
-.float--right {
-    float: right;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-} */
 
 /* HEADER */
 #navbar {
-    /* height: 70px; */
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     background-color: #F8F8F8;
     padding: 17px 120px;
     box-sizing: border-box;
@@ -66,7 +51,6 @@ h2 {
     left: 0px;
     right: 0px;
     z-index: 1;
-    /* transition: all ease 1s;  */
 }
 
 #navbar a {
@@ -76,16 +60,10 @@ h2 {
 .navbar__logo {
     letter-spacing: 2px;
     font-size: 24px;
-    /* color: #2c2c2c; */
 }
-
-/* .navbar--menu {
-    transition: ease-in-out 1s; 
-} */
 
 .navbar__menu {
     display: flex;
-    /* transition: 1s;  */
 }
 
 .navbar__menu li {
@@ -96,20 +74,13 @@ h2 {
 }
 
 .navbar__menu li:hover {
-    /* background-color: #1E90FF; */
     background-color: lightskyblue;
     border-radius: 4px;
-    /* color: white !important; */
 }
-
-/* .navbar__menu li a:hover {
-    color: white !important;
-} */
 
 .navbar__toggleBtn {
     display: none;
     font-size: 24px;
-    /* color: #7A7A82; */
 }
 
 .navbar__toggleBtn i {
@@ -117,11 +88,9 @@ h2 {
 }
 
 
-
 /* section */
 .section {
     width: 100%;
-    /* height: calc(100vh - 70px - var(--footer-height)); */
     height: 100%;
     position: relative;
 }
@@ -133,7 +102,6 @@ h2 {
     box-sizing: border-box;
     padding: 120px 12px 0 12px;
 }
-
 
 
 /* INTRO */
@@ -158,8 +126,6 @@ h2 {
 }
 
 #intro .intro__img img {
-    /* width: 300px; */
-    /* height: 300px; */
     width: 100%;
     height: auto;
 }
@@ -247,6 +213,7 @@ h2 {
     justify-content: space-around;
 }
 
+
 /* WORKS */
 #works {
     background-color: var(--container-bg);
@@ -294,6 +261,7 @@ h2 {
     font-weight: 700;
 }
 
+
 /* CONTACT */
 #contact {
     background-color: var(--container-bg);
@@ -313,6 +281,7 @@ h2 {
     color: #1E90FF;
     font-weight: 700;
 }
+
 
 /* FOOTER */
 #footer {
@@ -336,13 +305,11 @@ h2 {
 
 #footer .footer__inner p {
     color: white;
-    /* background-color: black; */
     background-color: #262626;
     padding: 15px;
     font-size: 18px;
     font-weight: 700;
 }
-
 
 
 /* For small screen */
@@ -352,8 +319,6 @@ h2 {
     #navbar {
         flex-direction: column;
         padding: 8px 25px;
-        /* text-align: left; */
-        /* align-items: flex-start; */
     }
 
     #navbar .navbar__logo {
@@ -368,8 +333,6 @@ h2 {
         align-items: center;
         padding-top: 5px;
         border-top: 1px solid lightgray;
-        /* width: 100%; */
-        transition: ease-in-out 1s;
     }
 
     .navbar__menu li {
@@ -385,9 +348,6 @@ h2 {
     .navbar__menu.active {
         display: flex;
         transition: ease-in-out 1s;
-        /* transition: .4s;  */
-        /* animation: my-animation 1s; */
-        /* transition: ease-in-out 1s;  */
     }
 
 
@@ -398,12 +358,6 @@ h2 {
 
 
     /* ABOUT */
-
-    /* #about .about__img img {
-        width: 280px;
-        height: 376px;
-    } */
-
     #about .about__inner .summary p {
         font-size: 15px;
         line-height: 2;
@@ -412,7 +366,6 @@ h2 {
 
     /* SKILLS */
     #skills .skills__inner {
-        /* flex-direction: column; */
         align-items: center;
     }
 
@@ -432,7 +385,6 @@ h2 {
     }
 
 
-
     /* WORKS */
     #works .works__inner {
         flex-direction: column;
@@ -442,12 +394,12 @@ h2 {
     #works .works__inner .card {
         margin-top: 25px;
     }
-
 }
 
-@media screen and (max-width: 768px) {
-    /* ABOUT */
 
+@media screen and (max-width: 768px) {
+
+    /* ABOUT */
     #about .about__inner {
         flex-direction: column;
         align-items: center;
@@ -458,15 +410,8 @@ h2 {
         margin-bottom: 25px;
     }
 
-    /* #about .about__img img {
-        width: 350px;
-        height: 470px;
-    } */
-
     #about .about__inner .summary p {
         font-size: 14px;
         line-height: 2;
     }
-
-
 }
