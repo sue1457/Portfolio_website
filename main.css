@@ -1,6 +1,6 @@
 :root {
     --footer-height: 50px;
-    --container-bg: #F0FFFF; 
+    --container-bg: #F0FFFF;
     --white-font: #fffafa;
 }
 
@@ -24,6 +24,20 @@ h2 {
     letter-spacing: 2px;
     margin-bottom: 25px;
     text-align: center;
+}
+
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.sa-up {
+    transform: translate(0, 100px);
+}
+
+.sa.show {
+    opacity: 1;
+    transform: none;
 }
 
 /* .float--left {
@@ -78,6 +92,7 @@ h2 {
     letter-spacing: 2px;
     padding: 8px 16px;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .navbar__menu li:hover {
@@ -182,7 +197,7 @@ h2 {
 }
 
 #about .about__inner .summary h2 {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -228,7 +243,7 @@ h2 {
 }
 
 #skills .skills__inner .row_2 {
-    display: flex;    
+    display: flex;
     justify-content: space-around;
 }
 
@@ -332,6 +347,7 @@ h2 {
 
 /* For small screen */
 @media screen and (max-width: 1025px) {
+
     /* NAV */
     #navbar {
         flex-direction: column;
@@ -353,7 +369,7 @@ h2 {
         padding-top: 5px;
         border-top: 1px solid lightgray;
         /* width: 100%; */
-        transition: ease-in-out 1s; 
+        transition: ease-in-out 1s;
     }
 
     .navbar__menu li {
@@ -368,7 +384,7 @@ h2 {
     /* When toggle button is clicked - active state */
     .navbar__menu.active {
         display: flex;
-        transition: ease-in-out 1s; 
+        transition: ease-in-out 1s;
         /* transition: .4s;  */
         /* animation: my-animation 1s; */
         /* transition: ease-in-out 1s;  */
